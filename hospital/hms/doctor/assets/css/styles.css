@@ -1,0 +1,340 @@
+/* Basic container styling */
+#container {
+  margin-top: 20px;
+}
+
+/* Page title styling */
+#page-title {
+  margin-bottom: 20px;
+}
+
+.mainTitle {
+  font-size: 2em;
+  color: #333;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Dashboard panels */
+.panel.panel-white {
+  margin-bottom: 30px;
+  border-radius: 10px; /* Rounded corners for panels */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  padding: 20px;
+  background: #fff;
+}
+
+.StepTitle {
+  font-size: 1.5em;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+.links a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  text-decoration: underline;
+  color: #0056b3; /* Darker blue on hover */
+}
+
+/* Main Layout Container */
+#app {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+  background-color: #f4f7fa;
+  font-family: "Lato", sans-serif;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  background-color: #2c3e50; /* Dark background color for the sidebar */
+  color: #fff;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.sidebar-container {
+  padding: 0 10px;
+}
+
+/* Main Navigation Menu */
+.main-navigation-menu {
+  list-style: none;
+  padding-left: 0;
+}
+
+.main-navigation-menu > li {
+  margin-bottom: 10px;
+}
+
+.main-navigation-menu .item-content {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.1em;
+}
+
+.main-navigation-menu .item-content:hover {
+  background-color: #34495e; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover for effect */
+}
+
+.main-navigation-menu .item-media {
+  margin-right: 15px;
+  font-size: 22px;
+}
+
+.main-navigation-menu .item-inner .title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.sub-menu {
+  list-style: none;
+  padding-left: 20px;
+  display: none; /* Initially hidden */
+}
+
+.main-navigation-menu > li:hover .sub-menu {
+  display: block;
+}
+
+.sub-menu li {
+  padding: 5px 0;
+}
+
+.sub-menu li a {
+  text-decoration: none;
+  color: #bdc3c7;
+  font-size: 14px;
+}
+
+.sub-menu li a:hover {
+  color: #ecf0f1;
+}
+
+/* Navbar Title */
+.navbar-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ecf0f1;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* Active Link */
+.main-navigation-menu .active > .item-content {
+  background-color: #16a085; /* Active link background */
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Main Content */
+.app-content {
+  margin-left: 250px; /* Adjust content area to accommodate sidebar */
+  padding: 20px;
+  width: 100%;
+  transition: margin-left 0.3s ease;
+}
+
+.app-content .container-fluid {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px; /* Rounded corners for content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.app-content h1.mainTitle {
+  font-size: 2em;
+  color: #333;
+}
+
+.app-content .panel-white {
+  border-radius: 10px; /* Rounded corners for panels */
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Sidebar Collapsed (Mobile/Small Screen) */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .app-content {
+    margin-left: 0;
+  }
+
+  .main-navigation-menu .item-content {
+    font-size: 1em;
+  }
+}
+
+/* Panel Styling (My Profile, My Appointments) */
+.panel-white .panel-body {
+  padding: 20px;
+}
+
+.panel-white .panel-body span.fa-stack {
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+.panel-white .panel-body .fa {
+  color: #3498db;
+}
+
+.panel-white .panel-body h2.StepTitle {
+  color: #333;
+  font-size: 1.5em;
+}
+
+.panel-white .panel-body .cl-effect-1 a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 1.1em;
+}
+
+.panel-white .panel-body .cl-effect-1 a:hover {
+  text-decoration: underline;
+  color: #0056b3; /* Darker blue on hover */
+}
+
+/* Specific styles for Add Patient page */
+.add-patient-container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+}
+
+.add-patient-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-patient-header .mainTitle {
+  font-size: 2em;
+  font-weight: 700;
+  color: #2c3e50;
+  text-transform: uppercase;
+}
+
+/* Panel Section */
+.add-patient-panel {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-patient-panel .panel-title {
+  font-size: 1.6em;
+  color: #34495e;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Form Group */
+.add-patient-form-group {
+  margin-bottom: 20px;
+}
+
+.add-patient-form-group label {
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #34495e;
+}
+
+/* Input Fields */
+.add-patient-form-group input[type="text"],
+.add-patient-form-group input[type="email"],
+.add-patient-form-group textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f4f6f7;
+  transition: all 0.3s ease;
+}
+
+.add-patient-form-group input[type="text"]:focus,
+.add-patient-form-group input[type="email"]:focus,
+.add-patient-form-group textarea:focus {
+  border-color: #16a085;
+  background-color: #ffffff;
+}
+
+/* Gender Radio buttons */
+.add-patient-gender-group {
+  display: flex;
+  gap: 20px;
+}
+
+.add-patient-gender-group input[type="radio"] {
+  margin-right: 8px;
+}
+
+/* Submit Button */
+.add-patient-submit-btn {
+  background-color: #16a085;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.2em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-patient-submit-btn:hover {
+  background-color: #1abc9c;
+}
+
+/* Alert messages */
+.add-patient-alert {
+  font-size: 1.1em;
+  color: #e74c3c;
+  margin-top: 10px;
+}
+
+.add-patient-alert.success {
+  color: #2ecc71;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .add-patient-container {
+    padding: 10px;
+  }
+
+  .add-patient-form-group input,
+  .add-patient-form-group textarea {
+    padding: 10px;
+  }
+
+  .add-patient-submit-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+}

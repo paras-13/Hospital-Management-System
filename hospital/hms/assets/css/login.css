@@ -1,0 +1,132 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+/* Background Styling */
+.user-login-body {
+  background: linear-gradient(135deg, #2980b9, #8e44ad);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main Login Container */
+.user-login-container {
+  width: 100%;
+  max-width: 450px; /* Increased width of the form */
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.8s ease;
+}
+
+/* Login Header Logo */
+.user-login-logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.user-login-logo h2 {
+  font-size: 28px;
+  color: #3498db;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+/* Form Box */
+.user-login-form-box {
+  padding: 20px;
+}
+
+/* Input Fields */
+.user-login-input {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-sizing: border-box; /* Prevents padding from affecting width */
+}
+
+.user-login-input:focus {
+  border-color: #3498db;
+}
+
+/* Button Styling */
+.user-login-btn {
+  width: 100%; /* Full width of the form */
+  padding: 16px; /* Slightly more padding for better balance */
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-sizing: border-box; /* Prevents padding from affecting width */
+}
+
+.user-login-btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-5px);
+}
+
+/* New Account Link */
+.user-login-new-account {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.user-login-new-account a {
+  color: #3498db;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.user-login-new-account a:hover {
+  text-decoration: underline;
+}
+
+/* Forgot Password Link */
+.user-login-forgot-password {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.user-login-forgot-password a {
+  color: #e74c3c;
+  text-decoration: none;
+}
+
+.user-login-forgot-password a:hover {
+  text-decoration: underline;
+}
+
+/* Copyright Text */
+.user-login-copyright {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 12px;
+  color: #777;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

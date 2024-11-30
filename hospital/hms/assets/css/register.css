@@ -1,0 +1,150 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+/* Background Styling */
+.user-register-body {
+  background: linear-gradient(135deg, #2980b9, #8e44ad);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main Register Container */
+.user-register-container {
+  width: 100%;
+  max-width: 450px; /* Increased width of the form */
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.8s ease;
+}
+
+/* Register Header Logo */
+.user-register-logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.user-register-logo h2 {
+  font-size: 28px;
+  color: #3498db;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+/* Register Box */
+.user-register-form-box {
+  padding: 20px;
+}
+
+/* Input Fields */
+.user-register-input {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-sizing: border-box; /* Prevents padding from affecting width */
+}
+
+.user-register-input:focus {
+  border-color: #3498db;
+}
+
+/* Gender Radio Buttons */
+.user-register-gender {
+  margin: 10px 0;
+}
+
+.user-register-gender input {
+  margin-right: 10px;
+}
+
+/* Button Styling */
+.user-register-btn {
+  width: 100%; /* Full width of the form */
+  padding: 16px; /* Slightly more padding for better balance */
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-sizing: border-box; /* Prevents padding from affecting width */
+}
+
+.user-register-btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-5px);
+}
+
+/* Checkbox Styling */
+.user-register-checkbox {
+  margin: 10px 0;
+}
+
+.user-register-checkbox input {
+  margin-right: 10px;
+}
+
+/* New Account Link */
+.user-register-new-account {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.user-register-new-account a {
+  color: #3498db;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.user-register-new-account a:hover {
+  text-decoration: underline;
+}
+
+/* Forgot Password Link */
+.user-register-forgot-password {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.user-register-forgot-password a {
+  color: #e74c3c;
+  text-decoration: none;
+}
+
+.user-register-forgot-password a:hover {
+  text-decoration: underline;
+}
+
+/* Copyright Text */
+.user-register-copyright {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 12px;
+  color: #777;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

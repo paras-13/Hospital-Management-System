@@ -1,0 +1,248 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+  display: flex;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Sidebar Styling */
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 300px; /* Increased the width of the sidebar */
+  background-color: #007bff;
+  color: white;
+  padding-top: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Enable scrolling when content exceeds the sidebar height */
+  scroll-behavior: smooth; /* Smooth scrolling effect */
+}
+
+.sidebar-container {
+  overflow-y: auto;
+  padding-bottom: 20px;
+}
+
+/* Sidebar Menu */
+.navbar-title {
+  color: #fff;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.main-navigation-menu {
+  list-style: none;
+  padding-left: 0;
+}
+
+.main-navigation-menu li {
+  display: block;
+  margin: 10px 0;
+}
+
+.main-navigation-menu a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10px;
+  padding-left: 30px;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.main-navigation-menu a:hover {
+  background-color: #0056b3;
+}
+
+.main-navigation-menu .sub-menu {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.main-navigation-menu .sub-menu li a {
+  font-size: 13px;
+  padding-left: 40px;
+}
+
+/* Dashboard Content */
+.app-content {
+  margin-left: 300px; /* Adjusted margin based on sidebar width */
+  width: calc(100% - 300px); /* Adjusted width of content */
+  padding: 20px;
+  background-color: #f4f7fc;
+}
+
+.page-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.page-title h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.breadcrumb {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 5px;
+}
+
+.breadcrumb li {
+  font-size: 14px;
+  color: #007bff;
+}
+
+.breadcrumb li.active {
+  color: #333;
+}
+
+/* Panel for Dashboard Widgets */
+.panel {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.panel-body {
+  text-align: center;
+}
+
+.panel .fa-stack {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.StepTitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.cl-effect-1 a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 16px;
+}
+
+.cl-effect-1 a:hover {
+  color: #0056b3;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  #sidebar {
+    width: 250px;
+  }
+
+  .app-content {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+  }
+}
+
+@media (max-width: 480px) {
+  #sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .app-content {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .navbar-title {
+    display: none;
+  }
+}
+
+/* General Layout for Admin Ambulance Management */
+.admin-ambulance-container {
+  width: 95%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-ambulance-container h4 {
+  text-align: center;
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Table Styling */
+.admin-ambulance-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.admin-ambulance-table th,
+.admin-ambulance-table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.admin-ambulance-table th {
+  background-color: #3498db;
+  color: white;
+}
+
+.admin-ambulance-table tr:nth-child(even) {
+  background-color: #ecf5fd;
+}
+
+.admin-ambulance-table td {
+  font-size: 14px;
+}
+
+.admin-ambulance-table .admin-btn-confirm {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.admin-ambulance-table .admin-btn-confirm:hover {
+  background-color: #218838;
+}

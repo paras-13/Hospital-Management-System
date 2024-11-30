@@ -1,0 +1,124 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+/* Background Styling */
+.admin-login-body {
+  background: linear-gradient(
+    135deg,
+    #2980b9,
+    #8e44ad
+  ); /* Gradient for the background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main Login Container */
+.admin-login-container {
+  width: 100%;
+  max-width: 450px; /* Set a max-width for the form */
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow around the form */
+  animation: fadeIn 0.8s ease;
+}
+
+/* Logo Styling */
+.admin-login-logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.admin-login-logo h2 {
+  font-size: 28px;
+  color: #3498db; /* Blue color for the title */
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+/* Form Box */
+.admin-login-box {
+  padding: 20px;
+}
+
+/* Input Fields */
+.admin-login-input {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.admin-login-input:focus {
+  border-color: #3498db; /* Blue border on focus */
+}
+
+/* Button Styling */
+.admin-login-btn {
+  width: 100%;
+  padding: 16px;
+  background-color: #3498db; /* Button color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.admin-login-btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-5px); /* Button hover effect */
+}
+
+/* Footer Link */
+.admin-login-footer {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.admin-login-footer a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.admin-login-footer a:hover {
+  text-decoration: underline; /* Underline link on hover */
+}
+
+/* Copyright Text */
+.admin-login-copyright {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 12px;
+  color: #777; /* Subtle text color for copyright */
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
